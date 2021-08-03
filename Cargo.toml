@@ -1,0 +1,24 @@
+[package]
+name = "libpulse-binding-async"
+authors = ["Amanda Graven <amanda@amandag.net>"]
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libpulse-binding = "2.24"
+futures = "0.3"
+
+[features]
+default = ["pa_v8"]
+
+# PA version compatibility selection
+# Refer to `COMPATABILITY.md` in libpulse-binding for explanation
+pa_v15 = ["pa_v14", "libpulse-binding/pa_v15"]
+pa_v14 = ["pa_v13", "libpulse-binding/pa_v14"]
+pa_v13 = ["pa_v12", "libpulse-binding/pa_v13"]
+pa_v12 = ["pa_v8",  "libpulse-binding/pa_v12"]
+pa_v8  = ["pa_v6",  "libpulse-binding/pa_v8"]
+pa_v6  = ["pa_v5",  "libpulse-binding/pa_v6"]
+pa_v5  = [          "libpulse-binding/pa_v5"]
