@@ -1,0 +1,1 @@
+window.ALL_CRATES = ["libpulse_binding_async"];
