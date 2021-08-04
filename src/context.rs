@@ -32,7 +32,7 @@ impl<'a> std::future::Future for ConnectFuture<'a> {
 	type Output = Result<(), PAErr>;
 
 	fn poll(mut self: Pin<&mut Self>, cx: &mut std::task::Context<'_>) -> Poll<Self::Output> {
-		if self.context.get_state() == State::Ready {
+		if self.context.get_state().is_good() {
 			return Poll::Ready(Ok(()));
 		}
 		let waker = cx.waker().clone();
