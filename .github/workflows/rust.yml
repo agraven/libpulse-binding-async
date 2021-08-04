@@ -30,8 +30,8 @@ jobs:
     steps:
       - name: Install dependencies
         run: |
-        sudo apt-get update
-        sudo apt-get install libpulse-dev
+          sudo apt-get update
+          sudo apt-get install libpulse-dev
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
         with:
