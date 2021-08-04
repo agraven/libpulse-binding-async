@@ -1,4 +1,4 @@
-///! Asyncronous operations
+//! Asyncronous operations
 use std::{
 	future::Future,
 	pin::Pin,
