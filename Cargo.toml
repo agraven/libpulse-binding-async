@@ -1,10 +1,13 @@
 [package]
 name = "libpulse-binding-async"
 authors = ["Amanda Graven <amanda@amandag.net>"]
+license = "LGPL-3.0-or-later"
+readme = "README.md"
+repository = "https://github.com/agraven/libpulse-binding-async"
+keywords = ["binding", "pulseaudio", "audio", "async", "sound"]
+categories = ["api-bindings", "asynchronous", "multimedia::audio"]
 version = "0.1.0"
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 libpulse-binding = "2.24"
