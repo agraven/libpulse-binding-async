@@ -19,6 +19,7 @@ jobs:
     - name: Formatting check
       run: |
         rustup toolchain add nightly
+        rustup component add rustfmt
         cargo +nightly fmt -- --check
     - name: Clippy
       run: cargo clippy --verbose
