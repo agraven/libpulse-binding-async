@@ -8,7 +8,8 @@ use std::{
 use libpulse_binding::error::Code;
 use pulse::{error::PAErr, operation::State};
 
-/// Asyncronous operation object, representing work being performed by the pulseaudio server.
+/// Asyncronous operation object, representing work being performed by the
+/// pulseaudio server.
 pub struct Operation<F: ?Sized>(pulse::operation::Operation<F>);
 
 impl<F: ?Sized> Future for Operation<F> {
