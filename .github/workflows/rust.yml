@@ -17,7 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Formatting check
-      run: cargo +nightly fmt -- --check
+      run: |
+        rustup toolchain add nightly
+        cargo +nightly fmt -- --check
     - name: Clippy
       run: cargo clippy --verbose
     - name: Run tests
