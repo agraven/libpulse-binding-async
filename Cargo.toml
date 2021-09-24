@@ -10,7 +10,7 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
-libpulse-binding = "2.24"
+libpulse-binding = "2.25"
 futures = "0.3"
 
 [features]
