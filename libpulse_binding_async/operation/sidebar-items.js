@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["Operation","Asyncronous operation object, representing work being performed by the pulseaudio server."]]});
+window.SIDEBAR_ITEMS = {"struct":["Operation"]};

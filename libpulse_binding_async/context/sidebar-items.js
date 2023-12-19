@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["Context","An opaque connection context to a daemon"]]});
+window.SIDEBAR_ITEMS = {"struct":["Context"]};

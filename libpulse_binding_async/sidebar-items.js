@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["context","Connection context"],["operation","Asyncronous operations"]]});
+window.SIDEBAR_ITEMS = {"mod":["context","operation"]};
